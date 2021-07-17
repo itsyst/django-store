@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>StartUp</title>
-</head>
-<body>
-<h1>Hi there !</h1>
-  
-</body>
+	<head>
+		<title>StartUp</title>
+	</head>
+	<body>
+		{% if name%}
+		<h1>Hi {{name}}!</h1>
+		{% else %}
+		<h1>Hi there !</h1>
+		{% endif %}
+	</body>
 </html>
